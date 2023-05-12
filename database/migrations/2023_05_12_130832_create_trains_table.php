@@ -19,11 +19,13 @@ return new class extends Migration
             $table->string('departure_station', 100);
             $table->string('arrival_station', 100);
             $table->time('departure_time');
+            $table->date('departure_date');
             $table->time('arrival_time');
+            $table->date('arrival_date');
             $table->unsignedMediumInteger('code');
             $table->unsignedTinyInteger('wagon');
-            $table->boolean('in_time');
-            $table->boolean('confirmed');
+            $table->string('in_time');
+            $table->string('confirmed');
             $table->timestamps('');
 
 
