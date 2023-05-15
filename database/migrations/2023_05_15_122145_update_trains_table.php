@@ -14,8 +14,6 @@ return new class extends Migration
     public function up()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->dropColumn('departure_date');
-            $table->dropColumn('arrival_date');
             $table->string('code', 5)->change();
             $table->renameColumn('code', 'train_code');
             $table->renameColumn('wagon', 'wagons_number');
