@@ -23,6 +23,8 @@ return new class extends Migration
             $table->boolean('confirmed')->change();
             $table->renameColumn('in_time', 'on_time');
             $table->renameColumn('confirmed', 'cancelled');
+            $table->date('departure_time')->change();
+            $table->date('arrival_time')->change();
     
         });
       
