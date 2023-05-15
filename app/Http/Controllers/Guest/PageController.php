@@ -12,9 +12,9 @@ class PageController extends Controller
 
         $dateNow = date('Y-m-d');
 
-        $trains = Train::whereDate('departure_date', '=', $dateNow)->get();
+        //$trains = Train::whereDate('departure_time', '=', $dateNow)->get();
 
-        //$trains = Train::all();
+        $trains = Train::all();
 
         //dd($trains);
 
